@@ -1,0 +1,37 @@
+{
+	"name": "s04e01-trombinoclock-mrsnakedoc",
+	"version": "1.0.0",
+	"description": "Application de trombinoscope pour le compte du client Nicole",
+	"main": "index.js",
+	"directories": {
+		"doc": "doc"
+	},
+	"scripts": {
+		"start": "NODE_ENV=prod node -r dotenv/config index.js",
+		"dev": "NODE_ENV=dev nodemon -r dotenv/config index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/O-clock-XIII/S04E02-trombinoclock-MrSnakeDoc.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/O-clock-XIII/S04E02-trombinoclock-MrSnakeDoc/issues"
+	},
+	"homepage": "https://github.com/O-clock-XIII/S04E02-trombinoclock-MrSnakeDoc#readme",
+	"dependencies": {
+		"dotenv": "^10.0.0",
+		"ejs": "^3.1.6",
+		"esm": "^3.2.25",
+		"express": "^4.17.1",
+		"lodash.merge": "^4.6.2",
+		"pg": "^8.7.1"
+	},
+	"prettier": {
+		"semi": false,
+		"useTabs": true
+	}
+}

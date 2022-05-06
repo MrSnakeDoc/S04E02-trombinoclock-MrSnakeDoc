@@ -1,0 +1,9 @@
+<%- include('partials/header') %>
+<h1>Promotion <%= promoId.name %></h1>
+    <h5><a href="<%= promoId.github_organization %>"><%= promoId.github_organization %></a></h5>
+    <ul>
+        <% for(const users of promo) { %>
+            <li>Name: <a href="/promo/<%= promoId.id %>/students/<%= users.id %>"><%= users.first_name %> <%= users.last_name %></a></li>
+        <% } %>
+    </ul>
+<%- include('partials/footer') %>

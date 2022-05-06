@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<h1>Promotion <%= promoId.name %></h1>
+    <h5><a href="<%= promoId.github_organization %>"><%= promoId.github_organization %></a></h5>
+    <ul>
+        <img src="<%= student.profile_picture_url %> " alt="Profile picture">
+        <li>Prénom : <%= student.first_name %></li>
+        <li>Nom : <%= student.last_name %></li>
+        <li>Username Github : <%= student.github_username %></li>
+    </ul>
+<%- include('partials/footer') %>
